@@ -14,7 +14,7 @@ const initialState = {
   videos: Videos,
   categories: Categories,
   categoryType: [],
-  searchText: "",
+  searchText: null,
   playlist: [],
   watchLater: getLocalStorage(),
 };
@@ -48,6 +48,11 @@ const DataReducer = (state, { type, payload }) => {
         ...state,
         watchLater: filteredWatchLater,
       };
+      case "SEARCH_PRODUCT":
+        return {
+          ...state,
+          searchText: payload,
+        };
 
     default:
       return state;
