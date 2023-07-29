@@ -1,0 +1,38 @@
+.sideBarContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 200px;
+    background-color: white;
+    box-shadow: 2px 0 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0 0 0;  /* 100px padding at the top */
+  }
+  
+  .items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    width: 80%;
+    padding: 10px 0;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .icon {
+    margin-right: 10px;
+  }
+  
+  .iconText {
+    flex-grow: 1;
+    text-align: left;
+  }
+  
+  .activeLink {
+    background-color: #f0f0f0;
+  }
+  

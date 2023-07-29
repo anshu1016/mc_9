@@ -1,0 +1,75 @@
+/* PlaylistCard.css */
+.playlistCArd {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
+    margin: 15px;
+    overflow: hidden;
+}
+
+.img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contentInfo {
+    padding: 10px;
+}
+
+.contentInfo h4 {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.contentInfo p {
+    color: #666;
+    font-size: 0.9em;
+}
+.edit-btn, .remove-btn, .add-new-address-btn {
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+    color: white;
+}
+
+.edit-btn {
+    background-color: #4CAF50;
+}
+
+.edit-btn:hover {
+    background-color: #45a049;
+}
+
+.remove-btn {
+    background-color: #f44336;
+}
+
+.remove-btn:hover {
+    background-color: #da190b;
+}
+
+.add-new-address-btn {
+    background-color: #008CBA;
+}
+
+.add-new-address-btn:hover {
+    background-color: #007B8A;
+}
+
+
+
+

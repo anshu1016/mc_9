@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import Category from "./pages/category/Category";
+import SideBar from "./pages/sidebar/SideBar";
+import VideoListing from "./pages/videoListing/VideoListing";
+import SingleVideo from "./features/singleVideo/SingleVideo";
+import Explore from "./pages/explore/Explore";
+import WatchLater from "./pages/watchLater/WatchLater";
+import PlayList from "./pages/playlist/PlayList";
+import NewPlaylist from "./features/newplaylist/NewPlaylist";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Routes>
+        <Route path="/video/:videoId" element={<SingleVideo />} />
+      </Routes>
+      <SideBar />
+      <Category />
+      <VideoListing />
+        {/*<SingleVideo />
+      <WatchLater />
+      <Explore />
+      <PlayList/> */}
+      {/* <SingleVideo/> */}
+      {/* <NewPlaylist/> */}
     </div>
   );
 }
