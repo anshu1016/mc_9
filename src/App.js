@@ -8,22 +8,21 @@ import Explore from "./pages/explore/Explore";
 import WatchLater from "./pages/watchLater/WatchLater";
 import PlayList from "./pages/playlist/PlayList";
 import NewPlaylist from "./features/newplaylist/NewPlaylist";
+import CategoryCard from "./features/categoryCard/CategoryCard";
+import CategoryListing from "./pages/categoryListing/CategoryListing";
 
 function App() {
   return (
     <div className="App">
-     <Routes>
+      <SideBar />
+      <Routes>
+        <Route path="/" element={<Category />} />
+        <Route path="/explore" element={<Explore />} />
+        <Route path="/playlist" element={<PlayList />} />
+        <Route path="/watchlater" element={<WatchLater />} />
+        <Route path="/categories/:categoryName" element={<CategoryListing />} />
         <Route path="/video/:videoId" element={<SingleVideo />} />
       </Routes>
-      <SideBar />
-      <Category />
-      <VideoListing />
-        {/*<SingleVideo />
-      <WatchLater />
-      <Explore />
-      <PlayList/> */}
-      {/* <SingleVideo/> */}
-      {/* <NewPlaylist/> */}
     </div>
   );
 }
